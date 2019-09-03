@@ -23,6 +23,6 @@ $(document).mousemove(function(e) {
 }).mouseover();
 
 
-$( "path" ).click(function() {
+$( "path" ).on('click touchstart', function ()  {
   window.open("./wp-content/uploads/2019/09/-1.jpg", '_self');
 });
