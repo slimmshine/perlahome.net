@@ -1,0 +1,33 @@
+
+
+#building-map {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+}
+
+path:hover, circle:hover {
+  stroke: #009FE3 !important;
+  stroke-width:2px;
+  stroke-linejoin: round;
+  fill: #009FE3 !important;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 11;
+  background-color: #b1babd;
+  border: 2px solid #b1babd;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: arial;
+  color: black;
+}
