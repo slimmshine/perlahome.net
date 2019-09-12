@@ -5,11 +5,11 @@ $( document ).ready(function() {
 });
 
 
-$("path, circle").hover(function(e) {
+$(".building-floors, circle").hover(function(e) {
   $('#info-box').css('display','block');
   $('#info-box').html($(this).data('info'));
 });
-$("path, circle").mouseleave(function(e) {
+$(".building-floors, circle").mouseleave(function(e) {
   $('#info-box').css('display','none');
 });
 $(document).mousemove(function(e) {
@@ -23,6 +23,6 @@ $(document).mousemove(function(e) {
 }).mouseover();
 
 
-$( "path" ).on('click touchstart', function ()  {
+$( ".building-floors" ).on('click touchstart', function ()  {
   window.open("./wp-content/uploads/2019/09/-1.jpg", '_self');
 });
