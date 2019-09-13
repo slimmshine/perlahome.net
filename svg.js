@@ -23,6 +23,8 @@ $(document).mousemove(function(e) {
 }).mouseover();
 
 
-/*$( ".building-floors" ).on('click touchstart', function ()  {
-  window.open("./wp-content/uploads/2019/09/-1.jpg", '_self');
-});*/
+$( ".building-floors" ).on('click touchstart', function ()  {
+	var fl = $(this).attr("fl-num")
+  openGallery(parseInt(fl));
+  console.log(parseInt(fl));
+});
